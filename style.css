@@ -1,0 +1,160 @@
+/* Reset CSS */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS Khusus Halaman Beranda */
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-desc {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+}
+
+.slide-desc h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.slide-desc p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Menambahkan animasi untuk slideshow */
+.slide.active {
+    opacity: 1;
+}
+
+
+/* Logo Styling (kiri) */
+.logo-left img {
+    width: 100px; /* Sesuaikan ukuran logo */
+    height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+}
+
+/* Navigasi Styling */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* CSS Khusus Halaman Kontak */
+.contact-info {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2 {
+    margin-bottom: 1rem; /* Jarak bawah dari judul */
+    font-size: 2rem; /* Ukuran font judul */
+    color: #007bff;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem; /* Jarak bawah dari paragraf */
+    font-size: 1.2rem; /* Ukuran font paragraf */
+}
+
+/* Tambahan: Stil alamat */
+.contact-info address {
+    font-style: normal;
+    font-size: 1.4rem; /* Ukuran font alamat yang lebih besar */
+    color: #555;
+}
+
+/* Tambahan: Stil tautan email */
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
